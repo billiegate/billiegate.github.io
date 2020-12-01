@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c0f0091e.chunk.css",
+    "main.js": "/static/js/main.db6f6211.chunk.js",
+    "main.js.map": "/static/js/main.db6f6211.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.3b3eb147.js",
+    "runtime-main.js.map": "/static/js/runtime-main.3b3eb147.js.map",
+    "static/js/2.9e6feb35.chunk.js": "/static/js/2.9e6feb35.chunk.js",
+    "static/js/2.9e6feb35.chunk.js.map": "/static/js/2.9e6feb35.chunk.js.map",
+    "static/js/3.e8f24379.chunk.js": "/static/js/3.e8f24379.chunk.js",
+    "static/js/3.e8f24379.chunk.js.map": "/static/js/3.e8f24379.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.c0f0091e.chunk.css.map": "/static/css/main.c0f0091e.chunk.css.map",
+    "static/js/2.9e6feb35.chunk.js.LICENSE.txt": "/static/js/2.9e6feb35.chunk.js.LICENSE.txt",
+    "static/media/apple-store.99490fbe.svg": "/static/media/apple-store.99490fbe.svg",
+    "static/media/arrow-left.142e26d6.svg": "/static/media/arrow-left.142e26d6.svg",
+    "static/media/arrow-right.6e8cb35d.svg": "/static/media/arrow-right.6e8cb35d.svg",
+    "static/media/brand-name-white.bdd655da.svg": "/static/media/brand-name-white.bdd655da.svg",
+    "static/media/brand-name.cde42c67.svg": "/static/media/brand-name.cde42c67.svg",
+    "static/media/calculator.4a8a3f85.svg": "/static/media/calculator.4a8a3f85.svg",
+    "static/media/circle-arrow-up.85fed9ef.svg": "/static/media/circle-arrow-up.85fed9ef.svg",
+    "static/media/easy.a53554ea.svg": "/static/media/easy.a53554ea.svg",
+    "static/media/lighting.f74b2088.svg": "/static/media/lighting.f74b2088.svg",
+    "static/media/logo-white.4eed5c17.svg": "/static/media/logo-white.4eed5c17.svg",
+    "static/media/logo.819039f5.svg": "/static/media/logo.819039f5.svg",
+    "static/media/play-store.36eaf743.svg": "/static/media/play-store.36eaf743.svg",
+    "static/media/rect-dot.ad07c679.svg": "/static/media/rect-dot.ad07c679.svg",
+    "static/media/search.8147d6f7.svg": "/static/media/search.8147d6f7.svg",
+    "static/media/star-moving.73b4a17d.svg": "/static/media/star-moving.73b4a17d.svg",
+    "static/media/testimony.376556db.svg": "/static/media/testimony.376556db.svg",
+    "static/media/times.3b362855.svg": "/static/media/times.3b362855.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3b3eb147.js",
+    "static/js/2.9e6feb35.chunk.js",
+    "static/css/main.c0f0091e.chunk.css",
+    "static/js/main.db6f6211.chunk.js"
+  ]
+}
