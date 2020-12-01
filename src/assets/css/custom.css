@@ -1,0 +1,219 @@
+.section-one {
+    /* margin-top: -90px; */
+    background-image: url(../svg/pattern1.svg)
+}
+
+.section-two {
+    background-image: url(../svg/pattern2.svg)
+}
+
+.section-five {
+    background-image: url(../svg/pattern5.svg)
+}
+
+@font-face {
+    font-family: african;
+    src: url(../fonts/african.ttf);
+}
+
+.font-african {
+    font-family: african;
+}
+
+/* .land-img-right {
+    bottom: -20px;
+} */
+
+.hidden {
+    display: none;
+}
+
+.Nav .close-menu {
+    visibility: hidden;
+    display: none;
+}
+
+.close-menu, .cancel, .open {
+    width:50px;
+    height:50px;
+    background-color:rgba(54, 7, 50, 0.08);
+    position:relative;
+    border-radius:50%;
+    cursor: pointer;
+}
+
+.close-menu:before,.close-menu:after,
+.cancel:before,.cancel:after
+.open:before,.open:after{
+    content:'';
+    position:absolute;
+    width:20px;
+    height:2px;
+    background-color:#360732;
+    border-radius:2px;
+    top:20px;
+}
+
+.cancel, .open{
+    position: absolute;
+    top:15px;
+    right: 0;
+    transition: transform 1s ease-in-out;
+}
+
+.cancel:before,.cancel:after, .open:before,.open:after{
+    content:'';
+    position:absolute;
+    width:20px;
+    height:2px;
+    background-color: rgb(255, 255, 255) !important;
+}
+
+.cancel:before{
+    -webkit-transform:rotate(45deg);
+    -moz-transform:rotate(45deg);
+    transform:rotate(45deg);
+    left:15px;
+}
+
+.cancel:after{
+    -webkit-transform:rotate(-45deg);
+    -moz-transform:rotate(-45deg);
+    transform:rotate(-45deg);
+    right:15px;
+}
+
+.open:before{
+    -webkit-transform:rotate(0deg);
+    -moz-transform:rotate(0deg);
+    transform:rotate(0deg);
+    left:15px;
+}
+
+.open:after{
+    -webkit-transform:rotate(-90deg);
+    -moz-transform:rotate(-90deg);
+    transform:rotate(-90deg);
+    right:15px;
+}
+
+.close-menu:before{
+    -webkit-transform:rotate(45deg);
+    -moz-transform:rotate(45deg);
+    transform:rotate(45deg);
+    left:16px;
+}
+.close-menu:after {
+    -webkit-transform:rotate(-45deg);
+    -moz-transform:rotate(-45deg);
+    transform:rotate(-45deg);
+    right:16px;
+}
+
+@media screen and (max-width: 768px) {
+    .Nav {
+        flex-direction: column;
+        width: 100%;
+        padding: 10% 0px;
+        
+        z-index: 200;
+    }
+
+    .menu__icon span {
+        display: block;
+        background: #fff;
+        width: 100%;
+        height: 3px;
+        margin-top: -2px;
+        position: absolute;
+        left: 0;
+        top: 50%;
+    }
+
+    .menu__icon {
+        width: 43px;
+        position: relative;
+        cursor: pointer;
+        /*   top: 10px;
+          right: 3%;
+        display: inline-block;
+        vertical-align: middle;
+        z-index: 20; */
+    }
+
+    .menu__icon span:before,
+    .menu__icon span:after {
+        content: "";
+        display: block;
+        background: #fff;
+        width: 100%;
+        height: 3px;
+        position: absolute;
+        left: 0;
+        transform-origin: center center;
+        transform: rotate(0deg);
+        transition: all 0.3s ease;
+    }
+
+    .menu__icon span:before {
+        top: 12px;
+        /* margin-top: -2px; */
+    }
+      
+    .menu__icon span:after {
+        bottom: 12px;
+        /* margin-bottom: -2px; */
+    }
+
+    .menu_shown.menu__icon span {
+        background: transparent;
+    }
+      
+    .menu_shown.menu__icon span:before {
+        top: 50%;
+        transform: rotate(45deg);
+    }
+      
+    .menu_shown.menu__icon span:after {
+        bottom: 50%;
+        transform: rotate(-45deg);
+    }
+
+    .mobile-nav {
+        height: 100vh;
+        position: fixed;
+        background-color: #fff;
+    }
+
+    .Nav .menus {
+        flex-direction: column;
+    }
+
+    .Nav .menus *{
+        margin: 0.7rem;
+        color: #360732;
+    }
+
+    .mobile-hidden {
+        display: none;
+    }
+
+    .Nav .close-menu {
+        visibility: visible;
+        display: block;
+    }
+
+    .mobile-nav-brand {
+        width: 100%;
+    }
+
+    .mobile-img-landing-left {
+        left: -10%;
+        bottom: -10%;
+    }
+
+    .mobile-img-landing-right {
+        right: -35%;
+        bottom: -10%;
+    }
+}

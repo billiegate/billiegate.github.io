@@ -4,29 +4,44 @@ import Button from '../components/common/Button';
 import lighting from '../../assets/svg/lighting.svg'
 import rectDot from '../../assets/svg/rect-dot.svg'
 import easy from '../../assets/svg/easy.svg'
-import arrowLeft from '../../assets/svg/arrow-left.svg'
-import arrowRight from '../../assets/svg/arrow-right.svg'
-import testimony from '../../assets/svg/testimony.svg'
+import tv from '../../assets/svg/tv.svg'
+import play from '../../assets/svg/play.svg'
+// import testimony from '../../assets/svg/testimony.svg'
+import aboki from '../../assets/svg/Mallam_1.png'
+import phone1 from '../../assets/svg/phone1.svg'
+import phone2 from '../../assets/svg/phone2.svg'
+import pattern4 from '../../assets/svg/pattern4.svg'
+import notification from '../../assets/svg/notification.svg'
+import seller from '../../assets/svg/Hand_manipulation.png'
 import Badge from '../components/common/Badge';
 
 function App() {
   return (
     <LandingPage>
-      <div className="px-16 py-6 flex flex-col justify-center items-center">
-        <div className="flex flex-col justify-center items-center mt-6 text-black">
-          <p className="text-5xl text-center font-bold">
-            Sell Bitcoin, Get Naira Asap!
+      <div className="px-16 py-18 flex flex-col justify-center items-center h-screen section-one truncate">
+        <div className="flex flex-col justify-center items-center mt-6 text-white">
+          <p className="text-5xl text-center font-bold font-african break-words" >
+            Sell Bitcoin,<br/> 
+            Get Naira Asap!
           </p>
-          <span className="text-sm text-center">
+          <span className="text-sm text-center font-avenir break-words" >
             We have just one mission; to help you convert your bitcoin to naira without <br/> 
             stress. Just think of us as your surest bitcoin padi.
           </span>
-          <Button className="text-white border bg-green flex items-center m-4">
+          <Button className="text-brown-dark border-0 bg-yellow flex items-center m-4 font-bold">
             <img src={lighting} alt="z" width="10px"/> &nbsp; Sell your BTC @ ₦425
           </Button>
         </div>
+        <div className="w-full flex overflow-hidden bottom-0 bg-red truncate" >
+            <div className="sm:w-full overflow-hidden h-screen lg:w-5/12 absolute left-0 bottom-0 ">
+              <img src={seller} alt="z" className="absolute bottom-0 mobile-img-landing-left" />
+            </div>
+            <div className="sm:w-full overflow-hidden h-screen lg:w-5/12 absolute right-0 bottom-0 ">
+              <img src={aboki} alt="z" className="absolute bottom-0 mobile-img-landing-right right-0" />
+            </div>
+          </div>
       </div>
-      <div className="px-16 py-6 flex flex-col bg-blue-lighter justify-center items-center">
+      <div className="px-16 py-12 flex flex-col bg-blue-lighter justify-center items-center bg-blue-lighter section-two">
         <div className="flex">
           <img src={starMoving} alt="*" width="60px" /> &nbsp;
           <img src={starMoving} alt="*" width="60px" /> &nbsp;
@@ -34,58 +49,55 @@ function App() {
           <img src={starMoving} alt="*" width="60px" /> &nbsp;
           <img src={starMoving} alt="*" width="60px" /> &nbsp;
         </div>
-        <p className="text-yellow text-3xl">We are the biggest buyer of bitcoin in Lagos, Nigeria</p>
+        <p className="text-white text-3xl text-center">We are the biggest buyer of bitcoin in Lagos, Nigeria</p>
       </div>
-      <div className="px-32 py-16 flex flex-col bg-teal-100">
+      <div className="sm:px-8 lg:px-32 sm:pt-8 lg:pt-16 flex flex-col bg-teal-100">
         <div className="flex flex-col mt-12 text-black">
-          <p className="text-4xl font-bold">
+          <p className="text-4xl font-bold text-center text-brown-dark font-african">
             No Long Talk!<br/>
-            Sell your Bitcoin<br/> 
-            in 2 easy steps!
+            Sell your bitcoin as he dey hot!
           </p>
-          <span className="text-sm">
-            A tool that lets you skip the registration process and get straight into transacting immediately.
+          <span className="text-sm text-center py-4">
+          BitcoinAboki lets you skip the registration process and get into transacting immediately.
           </span>
         </div>
-        <div className="grid grid-cols-3 gap-4 my-12">
+        <div className="grid grid-cols-2 gap-8 mt-12">
 
-          <div className="bg-green py-6 px-12 pb-16 text-white rounded-lg">
-            <div className="w-full flex justify-end">
-              <span className="w-12 h-12 bg-white rounded-full font-bold flex justify-center items-center bg-opacity-8">1</span>
-            </div>
-            <h2 className="pb-8 pt-4 text-xl font-bold">Provide Bank Details</h2>
-            <p>All we need is your Bank and account number. No BVN required.</p>
+          <div className="pt-6 px-6 flex justify-end">
+            <img src={phone1} alt="phone 1"/>
           </div>
 
-          <div className="bg-blue-lighter py-6 px-12 pb-16 text-white rounded-lg">
+          <div className="pt-6 px-6 relative">
+            <div className="absolute left-0 mt-8">
+              <img src={notification} alt="notification"/>
+            </div>
+            <img src={phone2} alt="phone 2"/>
+          </div>
+
+          {/* <div className="bg-blue-lighter py-6 px-12 pb-16 text-white rounded-lg">
             <div className="w-full flex justify-end">
               <span className="w-12 h-12 bg-white rounded-full font-bold flex justify-center items-center bg-opacity-8">2</span>
             </div>
             <h2 className="pb-8 pt-4 text-xl font-bold">Send Bitcoin</h2>
             <p>You’ll be provided with a unique wallet address to send the bitcoin.</p>
-          </div>
-
-          <div className="bg-blue-lighter py-6 px-12 pb-16 text-white rounded-lg">
-            <div className="w-full flex justify-end">
-              <span className="w-12 h-12 bg-white rounded-full font-bold flex justify-center items-center bg-opacity-8">2</span>
-            </div>
-            <h2 className="pb-8 pt-4 text-xl font-bold">Get Naira Sharpsharp</h2>
-            <p>As soon as the Bitcoin is confirmed (e no dey take time), your alert go show .</p>
-          </div>
+          </div> */}
 
         </div>
       </div>
 
-      <div className="bg-blue-lighter flex py-12 px-16 pt-32">
+      <div className="bg-yellow flex sm:flex-col lg:flex-row py-12 px-16 sm:pt-8 lg:pt-32 relative">
+        <div className="absolute top-0 left-0 right-0">
+          <img src={pattern4} alt="pa" />
+        </div>
 
         <div>
-         <img src={easy} alt="*" width="523px" />
+         <img src={easy} alt="*"  />
         </div>
-        <div className="ml-8">
-          <Badge className="text-sm bg-blue text-white mb-12">
+        <div className="sm:ml-2 lg:ml-8">
+          <Badge className="text-sm bg-red text-white mb-12">
            Why 5,327 Correct People use BitcoinAboki ?
           </Badge>
-          <p className="text-4xl font-bold text-white">
+          <p className="text-4xl font-bold text-black">
             We’ve made it <br/>
             easy because <br />
             nobody likes <br/>
@@ -94,55 +106,45 @@ function App() {
           <div>
             <p className="flex items-center py-2">
               <img src={rectDot} alt="." width="15px" /> &nbsp; &nbsp; &nbsp;
-              <del className="text-green">Sign up required</del> &nbsp; &nbsp;
-              <span className="text-yellow">No long thing</span>
+              <del className="text-red">Sign up required</del> &nbsp; &nbsp;
+              <span className="text-black">No long thing</span>
             </p>
             <p className="flex items-center py-2">
               <img src={rectDot} alt="." width="15px" /> &nbsp; &nbsp; &nbsp;
-              <del className="text-green">BVN, Wallet or OTP Required</del> &nbsp; &nbsp;
-              <span className="text-yellow">Sharp sharp</span>
+              <del className="text-red">BVN, Wallet or OTP Required</del> &nbsp; &nbsp;
+              <span className="text-black">Sharp sharp</span>
             </p>
             <p className="flex items-center py-2">
               <img src={rectDot} alt="." width="15px" /> &nbsp; &nbsp; &nbsp;
-              <del className="text-green">Delayed Payment</del> &nbsp; &nbsp;
-              <span className="text-yellow">For where ?</span>
+              <del className="text-red">Delayed Payment</del> &nbsp; &nbsp;
+              <span className="text-black">For where ?</span>
             </p>
             <p className="flex items-center py-2">
               <img src={rectDot} alt="." width="15px" /> &nbsp; &nbsp; &nbsp;
-              <del className="text-green">Withdrawal Limit</del> &nbsp; &nbsp;
-              <span className="text-yellow">No Withdrawal Limit</span>
+              <del className="text-red">Withdrawal Limit</del> &nbsp; &nbsp;
+              <span className="text-black">No Withdrawal Limit</span>
             </p>
           </div>
+        </div>
+
+        <div className="absolute bottom-0 left-0 right-0">
+          <img src={pattern4} alt="pa" />
         </div>
       </div>
 
-      <div className="px-32 py-24 flex bg-teal-100">
-        <div className="w-1/2 flex justify-center items-center">
-          <div className="block-inline w-2/3 relative border-8 rounded-b-full rounded-tr-full rounded-tl-md z-20">
-            <img className="relative z-10 w-full" src={testimony} alt="testimony" width="448px"  />
-          </div>
+      <div className="px-32 py-24 flex flex-col bg-teal-100 justify-center items-center section-five">
+        <div className="flex justify-center items-center">
+            <img className="relative z-10" src={tv} alt="tv"  />
         </div>
-        <div className="w-1/2 flex justify-center items-left flex-col">
-          <div className="w-2/3">
-            <q className="text-xl font-bold mb-2">
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
-            </q>
-            <br/><br/>
-            <span className="text-xs mt-4">
-            - Simbi Olarotimi, <small>On defeating temptations</small>
-            </span>
-          </div>
-
-          <div className="flex justify-left w-full">
-            <Button className="text-white bg-green flex items-center m-4">
-              <img src={arrowLeft} alt="<-" width="27px" />
+        <div className="">
+          <p className="text-3xl font-african py-8 text-brown-dark">
+          See Weytin dey ginger us
+          </p>
+        </div>
+        <div className="">
+            <Button className="text-white border-0 bg-brown-dark flex items-center m-4">
+              <img src={play} alt="play" width="10px"/> &nbsp; Watch our 1 mins video
             </Button>
-            &nbsp;
-            <Button className="text-white bg-green flex items-center m-4">
-              <img src={arrowRight} alt="->" width="27px" />
-            </Button>
-          </div>
-          
         </div>
       </div>
     </LandingPage>

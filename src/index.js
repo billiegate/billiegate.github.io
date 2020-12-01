@@ -6,10 +6,12 @@ import { createBrowserHistory } from "history";
 import store from './redux/store';
 import './index.css';
 import './assets/css/index.output.css';
+import './assets/css/custom.css';
 // import App from './App';
 import Landing from './ui/pages/Landing'
 import Faq from './ui/pages/Faq'
 import reportWebVitals from './reportWebVitals';
+import Calculator from './ui/pages/Calculator';
 
 const history = createBrowserHistory();
 
@@ -18,6 +20,7 @@ ReactDOM.render(
     <Router history={ history }>
       <Route path="/" exact={true} component={Landing}></Route>
       <Route path="/faq" exact={true} component={Faq}></Route>
+      <Route path="/calculator" component={Calculator}></Route>
     </Router>
   </Provider>,
   document.getElementById('root')

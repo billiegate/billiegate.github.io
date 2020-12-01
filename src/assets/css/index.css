@@ -9,3 +9,8 @@
 @import "tailwindcss/components";
 
 @import "tailwindcss/utilities"; */
+
+@font-face {
+    font-family: african;
+    src: url(../fonts/african.ttf);
+}

@@ -1,10 +1,12 @@
 function Badge(props) {
   return (
-    <div className={`py-2 px-4 rounded flex ${props.className}`}>
+    <a href={props.href}>
+      <div className={`py-2 px-4 rounded flex ${props.className}`}>
         {
           props.children
         }
-    </div>
+      </div>
+    </a>
   );
 }
 
